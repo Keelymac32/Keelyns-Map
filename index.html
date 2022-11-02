@@ -34,10 +34,14 @@
 
   /* display basemap tiles -- see others at https://leaflet-extras.github.io/leaflet-providers/preview/ */
   L.tileLayer(
-    'https://server.arcgisonline.com/ArcGIS/rest/services/World_Topo_Map/MapServer/tile/{z}/{y}/{x}', {
-	attribution: 'Tiles &copy; Esri &mdash; Esri, DeLorme, NAVTEQ, TomTom, Intermap, iPC, USGS, FAO, NPS, NRCAN, GeoBase, Kadaster NL, Ordnance Survey, Esri Japan, METI, Esri China (Hong Kong), and the GIS User Community'
+    'https://{s}.basemaps.cartocdn.com/light_all/{z}/{x}/{y}{r}.png', {
+          attribution: '&copy; <a href="https://osm.org/copyright">\
+            OpenStreetMap</a> contributors, &copy;\
+            <a href="https://carto.com/attribution">CARTO</a>'
   });
   .addTo(map);
+
+  
 
 
   /* Display college point markers with pop-up text */
